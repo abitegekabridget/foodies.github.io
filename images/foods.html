@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foods</title>
+    <!--boostrap cdn-->
+    <link href="./foods_files/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./foods_files/all.min.css">
+
+    <!-- Ensure that the Bootstrap JS library is loaded after the CSS -->
+    <!--on css-->
+    <link ref="stylesheet" href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/css/style.css">
+    <link ref="stylesheet" href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/css/responsive-style.css">
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@100;300;400;500;600;700;900&Roboto:wght@300;400;500;700&display=swap');
+*,
+*:after,
+*:before{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,
+:hover,
+:focus{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+a,
+a:hover{
+    text-decoration:none;
+}
+
+a:hover{
+    color: var(--primary-color), !important;
+}
+ul,
+o1{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.logo{
+    width:10px;
+    aspect-ratio: 1/1;
+}
+:root{
+    --primary-color:#A82C48;
+    --secondary-color:#43121d;
+    --white-color:#fff;
+    --text-color:#555;
+    --text-gray:#999;
+    --black-color:#999;
+    --primary-font:'Roboto',sans-serif;
+    --secondary-font:'Quicksand',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color:var(--secondary-color);
+}
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    text-transform:capitalize;
+    font-family:var(--secondary-color);
+    line-height:3rem;
+}
+
+h4
+{
+    color:var(--secondary-color);
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight:800;
+    margin-bottom: 0.5rem;
+
+}
+h5
+{
+    color:var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--secondary-font);
+    font-size:1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+}
+p{
+    font-size: 1rem;
+    color:var(--text-color);
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing:1px;
+}
+.main-btn{
+display: inline-block;
+padding: 0.625rem 1.875rem;
+background-color: var(--primary-color);
+border:0.1875rem solid var(--primary-color);
+color: var(--white-color);
+font-size: 0.9375rem;
+font-weight: 600;
+text-transform: capitalize;
+box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+-webkit-transition: all .4s ease-out 0s;
+-o-transition: all .4s ease-out 0s;
+-moz-transition: all .4s ease-out 0s;
+transition: all .4s ease-out 0s;
+
+}
+
+.white-btn
+{
+    padding: 0.625rem 1.875rem;
+    line-height: 25px;
+    background-color: var(--white-color);
+    border:0.1875rem solid var(--white-color);
+    color: var(--white-color);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+
+}
+.main-btn:hover{
+
+    background-color: transparent;
+    color: var(--primary-color);
+}
+.white-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.wrapper{
+    padding-top: 8.25rem;
+    padding-bottom: 8.25rem;
+}
+.text-content{
+    width: 70%;
+    margin:auto
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2{
+    color: var(--white-color);
+}
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left:0;
+    z-index:1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigaation-wrap .nav-item{
+    padding: 0 0.625;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+
+}
+.nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+.navigaation-wrap.main-btn{
+
+    padding: 0.3125rem 1.4357rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125ren 0 rgb(0,0,0,0.9);
+    transition: all .1s ease-in-out;
+}
+.top-banner{
+  width: 100%;
+  background: url('../mywebsite/images/chic-1.jpeg') no-repeat center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+}
+.counter-section{
+  background-color: var(--primary-color);
+  padding: 2.5rem 0;
+}
+.counter-section p{
+  color: var(--white-color);
+  text-transform:uppercase;
+
+
+}
+    </style>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navigation-wrap">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/index.html#"><img class="logo" src="./foods_files/logo.jpeg"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <i class="fas fa-stream navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/index.html#About%20Us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/index.html#Explore-food">Explore Foods</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/index.html#testimonial">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="file:///Users/sparrowsystemsltd/Desktop/bridget/mywebsite/index.html#FAQ">FAQ</a>
+            </li><li><button class="main-btn"> 1200 345 123</button></li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<section id="home">
+  <div class="container-fluid px-0 top-banner">
+    <div class="continer">
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <h1>Good food choices </h1>
+          <p>
+              High quality enegy giving food which is so delicious to eat
+          </p>
+          <div class="mt-4">
+            <button class="main-btn">order now<i class="fas fa-shopping-basket ps-3"></i></button>
+            <button class="white-btn ms-lg-4 mt-lg-0">order now<i class="fas fa-angle ps-3"></i></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<section id="counter">
+  <section class="counter-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3 mb-md-0 mb-5">
+
+        
+            <h2>
+                <span id="count1"></span>+
+            </h2>
+                <p>SAVINGS</p>
+          </div>
+      <div class="col-md-3 mb-md-0 mb-5">
+          <h2>
+            <span id="count2"></span>+
+          </h2>
+            <p>PHOTOS</p>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-5">
+            <h2>
+              <span id="count3"></span>+
+            </h2>
+                <p>ROCKET</p>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-5">
+          <h2>
+            <span id="count4"></span>+
+          </h2>
+              <p>GLOBALS</p>
+      </div>
+      </div>
+
+      </div></section>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--jslibralies-->
+    <script src="./foods_files/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="./foods_files/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!--on js -->
+  <script src="./foods_files/main.js"></script>
+<!--<section id="nav-bar">
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="data:image/jpeg;base64,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" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link " href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT US </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">TESTMONIALS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</section id="banner">
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p></p>
+      </div>
+        
+    </div>
+</div>
+<section>
+
+</section>-->
+
+
+<script>
+  document.addEventListener("DOMContentLoaded",()=>{
+    function counter(id,start,end,duration) {
+        let obj = document.getElementById(id),
+        current=start,
+        range=end-start,
+        increment=end>start ? 1 : -1,
+        stop = Math.abs(Math.floor(duration/range)),
+        timer = setInterval(() => {
+            current += increment;
+            obj.textContent = current;
+            if (current==end) {
+                clearInterval(timer);
+                
+            }
+            
+        }, stop);
+    }
+    counter("counter1",0,1287,3000);
+    counter("counter2",100,5786,2500);
+    counter("counter3",0,1440,3000);
+    counter("counter4",0,7110,3000);
+});
+</script>
+
+
+
+</body></html>
